@@ -6,6 +6,7 @@ There are in total of five questions with 50 seconds to timer to answer question
 
 Here is screen shot of lauch page of the quiz. Also I have added the link here to access the quiz lauch page. Enjoy playing the quiz!! Hope you win the high score. 
 
+![screen-shot-quiz](https://user-images.githubusercontent.com/120338398/214471622-254bb16a-1522-49ad-83a5-80db6a71ae90.png)
 
 
 The URL to:
