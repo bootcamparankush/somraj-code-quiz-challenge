@@ -9,13 +9,13 @@ Here is screen shot of lauch page of the quiz. Also I have added the link here t
 ![screen-shot-quiz](https://user-images.githubusercontent.com/120338398/214471622-254bb16a-1522-49ad-83a5-80db6a71ae90.png)
 
 
-The URL to:
+**The URL to:**
 https://bootcamparankush.github.io/somraj-code-quiz-challenge/
 
 
-Technology applied: 
+**Technology applied:** 
 
 This app runs in the internet browser and features dynamically updated HTML and CSS powered by JavaScript code. In addition the app has a clean, polished, and responsive user interface. 
 
-Credits:
-I want to thank Katie Redford (Tutor), Freddy (TA) and Nathan (Instructor) in helping me troubleshooting with my timer and highscore function specially helping me understand certain new concepts in Javascript.
+**Credits:**
+I want to thank Katie Redford (Tutor), Freddy (TA) and Nathan (Instructor) and Shaminder (TA) in helping me troubleshooting with my timer and highscore functions and specially helping me understand certain new concepts in Javascript.
