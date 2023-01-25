@@ -1,5 +1,4 @@
 // This javascript file is for the game logic
-
 var question = document.getElementById("question");
 var choices = Array.from(document.getElementsByClassName("choice-text"));
 var questionCounterText = document.getElementById('questionCounter');
@@ -113,23 +112,22 @@ getnewQuestion = () => {
 choices.forEach (choice => {
     choice.addEventListener ("click", e => {
     // console.log(e.target);
-    
-    
-    if(!acceptAnswers) return;
-
-    acceptAnswers = false;
+    // console.log(acceptAnswers);
     
     var selectedChoice = e.target;
     var selectedAnswer = selectedChoice.dataset ["number"];
-   //logic to substract time for each incorrect response. 
-    count = count - 3;
-    
+   
+
     var classtoApply = 'incorrect';
 
     if (selectedAnswer == currentQuestion.answer) {
         // console.log (selectedAnswer == currentQuestion.answer) 
             classtoApply = 'correct';
+    } else {
+        //logic to substract time for each incorrect response. 
+        count = count - 5; 
     }
+
 
     if (classtoApply == 'correct') {
         incrementScore(CORRECT_BONUS);
