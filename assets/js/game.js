@@ -1,4 +1,4 @@
-// console.log("Hello is this page working");
+// This javascript file is for the game logic
 
 var question = document.getElementById("question");
 var choices = Array.from(document.getElementsByClassName("choice-text"));
@@ -12,6 +12,7 @@ var score = 0;
 var questionCounter = 0;
 var availableQuestions = [];
 
+// Array of questions for quiz
 var questions = [
 {
     question: "Inside which HTML element do we put the Javascript?",
@@ -36,20 +37,35 @@ var questions = [
     choice3: "msg('Hello World');",
     choice4: "alert('Hello World');",
     answer: 4
+},
+{
+    question: "Where is the correct place to insert a JavaScript?",
+    choice1: "The <body> section;",
+    choice2: "Both the <head> section and the <body> section are correct;",
+    choice3: "The <head> section.",
+    choice4: "None of the above;",
+    answer: 1
+},
+{
+    question: "How do you create a function in JavaScript??",
+    choice1: "function:myFunction();",
+    choice2: "function myFunction();",
+    choice3: "function = myFunction():",
+    choice4: "function <> myFunction();",
+    answer: 2
 }
 
 ]
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 5;
 
+// function start game
 startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    
     // console.log(availableQuestions);
-
     getnewQuestion ();
 
 };
@@ -68,9 +84,7 @@ count--;
     }
 };
 
-
-
-
+//function to get new questions
 getnewQuestion = () => {
 
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS){
@@ -80,7 +94,6 @@ getnewQuestion = () => {
     } 
 
     questionCounter++;
-    // questionCounterText.innerText = '${questionCounter}/${MAX_QUESTIONS}';
     questionCounterText.innerText = questionCounter + "/" + MAX_QUESTIONS;
 
     var questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -101,12 +114,16 @@ choices.forEach (choice => {
     choice.addEventListener ("click", e => {
     // console.log(e.target);
     
+    
     if(!acceptAnswers) return;
 
     acceptAnswers = false;
+    
     var selectedChoice = e.target;
     var selectedAnswer = selectedChoice.dataset ["number"];
+   //logic to substract time for each incorrect response. 
     count = count - 3;
+    
     var classtoApply = 'incorrect';
 
     if (selectedAnswer == currentQuestion.answer) {
@@ -134,9 +151,8 @@ incrementScore = num => {
 }
 startGame();
 
-// end game
-
+// end game function
 function endGame(){
-    console.log("hello");
+    // console.log("end game");
     location.replace ("./end.html");
 };
