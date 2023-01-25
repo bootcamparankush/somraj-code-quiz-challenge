@@ -18,4 +18,4 @@ https://bootcamparankush.github.io/somraj-code-quiz-challenge/
 This app runs in the internet browser and features dynamically updated HTML and CSS powered by JavaScript code. In addition the app has a clean, polished, and responsive user interface. 
 
 **Credits:**
-I want to thank Katie Redford (Tutor), Freddy (TA) and Nathan (Instructor) and Shaminder (TA) in helping me troubleshooting with my timer and highscore functions and specially helping me understand certain new concepts in Javascript.
+I want to thank **Katie Redford (Tutor), Freddy (TA) and Nathan (Instructor) and Shaminder (TA) ** in helping me troubleshooting with my timer and highscore functions and specially helping me understand certain new concepts in Javascript.
